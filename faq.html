@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>IkusasaLentsha - FAQs</title>
+</head>
+<body>
+    <section class="faq-section">
+  <h2>Frequently Asked Questions (FAQs)</h2>
+
+  <div class="faq">
+    <button class="faq-question">What is IkusasaLentsha?</button>
+    <div class="faq-answer">
+      <p>IkusasaLentsha is a non-profit organization based in Bergville, KwaZulu-Natal, founded in October 2020 by Ms. Nomfundo Nkosi. It focuses on community development and education, helping rural learners access university applications, bursaries, career guidance, and professional development opportunities.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">Where is IkusasaLentsha located?</button>
+    <div class="faq-answer">
+      <p>IkusasaLentsha is based in Bergville, KwaZulu-Natal, South Africa.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">What is IkusasaLentsha’s mission?</button>
+    <div class="faq-answer">
+      <p>Our mission is to help rural learners achieve their educational and career goals by providing access to resources, mentorship, and opportunities.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">What services does IkusasaLentsha offer?</button>
+    <div class="faq-answer">
+      <p>We provide assistance with university applications, bursary information, career guidance, exam support, mentorship programs, and skill development workshops.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">Who are IkusasaLentsha’s partners?</button>
+    <div class="faq-answer">
+      <p>Our exclusive partner is the Durban University of Technology (DUT), and we collaborate with organizations like Love Life and the Department of Social Development (DSD).</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">How can I donate to IkusasaLentsha?</button>
+    <div class="faq-answer">
+      <p>Donations can be made through our official channels. Visit our "Donate" page for details on bank transfers or partnerships.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">How can I contact IkusasaLentsha?</button>
+    <div class="faq-answer">
+      <p>You can contact us via email, phone, or through our social media platforms such as Facebook.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const faqs = document.querySelectorAll(".faq-question");
+  faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+      faq.classList.toggle("active");
+      const answer = faq.nextElementSibling;
+      if (faq.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
