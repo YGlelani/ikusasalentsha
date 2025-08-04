@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e3a8a; /* Navy blue */
+    margin-bottom: 15px;
+}
+
+ h2 {
+    font-size: 1.5rem;
+    color: #1e40af;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #2563eb; /* Blue accent */
+}
+.bio-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.bio-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+.bio-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bio-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #222;
+}
+
+.bio-text, .bio-facebook {
+    margin-top: 20px;
+}
+
+.bio-facebook iframe {
+    max-width: 100%;
+}
+
+.bio-back {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}

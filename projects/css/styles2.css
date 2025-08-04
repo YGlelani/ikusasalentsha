@@ -1,0 +1,445 @@
+#back-btn {
+    display: inline-block;
+    position: fixed;
+    background: #1e3a8a; /* Navy Blue */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#back-btn:hover {
+    background: #f97316; /* Orange on hover */
+    transform: translateY(-2px);
+}
+
+#back-btn:active {
+    transform: scale(0.98); /* Small press effect */
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #2563eb; /* Blue accent */
+}
+/* ---- bookathon.css ---- */
+
+.bookathon-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.bookathon-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e3a8a; /* Navy blue */
+    margin-bottom: 15px;
+}
+
+.bookathon-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bookathon-section a {
+    color: #f97316; /* Orange */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bookathon-section a:hover {
+    text-decoration: underline;
+}
+
+.bookathon-section h2 {
+    font-size: 1.5rem;
+    color: #1e40af;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.bookathon-section iframe {
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ---- styles2.css ---- */
+
+/* General Section Styling */
+.literacy-program, 
+.sanitary-pads-campaign {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Main Title */
+.literacy-program h1,
+.sanitary-pads-campaign h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a; /* Navy Blue */
+    font-weight: 700;
+}
+
+/* Sub-Headings */
+.literacy-program h2,
+.sanitary-pads-campaign h2 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #f97316; /* Orange */
+    border-left: 5px solid #f97316;
+    padding-left: 10px;
+}
+
+/* Third-Level Headings (used in Literacy Program) */
+.literacy-program h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #2563eb; /* Blue accent */
+}
+
+/* Paragraph Styling */
+.literacy-program p,
+.sanitary-pads-campaign p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Lists */
+.literacy-program ul,
+.sanitary-pads-campaign ul {
+    margin: 10px 0 20px 25px;
+    padding: 0;
+}
+
+.literacy-program li,
+.sanitary-pads-campaign li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Add a custom bullet */
+.literacy-program li::before,
+.sanitary-pads-campaign li::before {
+    content: "•";
+    color: #f97316; /* Orange bullet */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Emphasis Text */
+.literacy-program strong,
+.sanitary-pads-campaign strong {
+    color: #1e40af; /* Deep Blue */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .literacy-program, 
+    .sanitary-pads-campaign {
+        padding: 20px;
+    }
+
+    .literacy-program h1,
+    .sanitary-pads-campaign h1 {
+        font-size: 2rem;
+    }
+
+    .literacy-program h2,
+    .sanitary-pads-campaign h2 {
+        font-size: 1.4rem;
+    }
+
+    .literacy-program p,
+    .sanitary-pads-campaign p,
+    .literacy-program li,
+    .sanitary-pads-campaign li {
+        font-size: 0.95rem;
+    }
+}
+
+/* university-applications.css */
+/* University Applications Support Section */
+/* Back Button */
+#back-btn {
+    display: inline-block;
+    margin: 20px 0;
+    background: #1e3a8a; /* Navy Blue */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+#back-btn:hover {
+    background: #f97316; /* Orange */
+    transform: translateY(-2px);
+}
+
+/* University Applications Section */
+.university-applications {
+    max-width: 900px;
+    margin: 20px auto 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+.university-applications h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+.university-applications h2 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #f97316;
+    border-left: 5px solid #f97316;
+    padding-left: 10px;
+}
+
+.university-applications h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.university-applications p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.university-applications ul {
+    margin: 10px 0 20px 25px;
+}
+
+.university-applications li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.university-applications li::before {
+    content: "•";
+    color: #f97316;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.university-applications iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .university-applications {
+        padding: 20px;
+    }
+    .university-applications h1 {
+        font-size: 2rem;
+    }
+    .university-applications h2 {
+        font-size: 1.4rem;
+    }
+    .university-applications p,
+    .university-applications li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Section Container */
+.embedded-posts {
+    padding: 40px 20px;
+    background: #f9fafb;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.embedded-posts h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+/* Facebook Post Container */
+.fb-post-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Facebook Iframes (all styled the same) */
+.fb-embed {
+    width: 100%;
+    max-width: 500px;
+    height: 650px; /* Default height */
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .fb-embed {
+        height: 500px; /* Adjust height for mobile */
+    }
+}
+
+
+/* Back Button */
+#back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #1e3a8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#back-btn:hover {
+    background: #f97316;
+}
+
+/* Career Guidance Section */
+.career-guidance {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f9fafb;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+.career-guidance h1 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.career-guidance h2 {
+    margin-top: 25px;
+    color: #f97316;
+    font-size: 1.8rem;
+}
+
+.career-guidance p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.career-guidance ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.career-guidance ul li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+/* Back Button */
+#back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #1e3a8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#back-btn:hover {
+    background: #f97316;
+}
+
+/* Career Elevation Section */
+.career-elevation {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f9fafb;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+.career-elevation h1 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.career-elevation h2 {
+    margin-top: 25px;
+    color: #f97316;
+    font-size: 1.8rem;
+}
+
+.career-elevation p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.career-elevation ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.career-elevation ul li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
