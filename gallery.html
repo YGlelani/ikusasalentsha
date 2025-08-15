@@ -1,0 +1,149 @@
+<!--This page is the gellery page ,it has simple styling but showing just the images that are in the images folde-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PMXRVJVVS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8PMXRVJVVS');
+</script>
+    <link rel="icon" type="image/png" href="logo/favicon.ico"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Styles for the gallery class-->
+
+    <style>
+        .gallery {
+            padding: 60px 0;
+            background-color: #f8f9fc;
+        }
+
+        .gallery .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-col {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .gallery-col img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .gallery-col {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 576px) {
+            .gallery-col {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo/logo.jpg"></a>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Programs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                      <li><a href="Team.html">Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Gallery</h1>
+    </section>
+<!----------------------------gallery---------------------->
+    <section class="gallery">
+        <div class="row">
+            <div class="gallery-col">
+                <img src="images/applications-june-day1-2.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/applications-june-day1-3.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/applications-june-day1.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/applications-june-day2-2.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/applications-june-day3-2.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/sanitary pad 2024 2.jpg" alt="">
+            </div>
+
+            <div class="gallery-col">
+                <img src="images/applications-june-day1.jpg" alt="">
+            </div> 
+        </div>
+        <div class="row">
+            <div class="gallery-col">
+                <img src="images/sanitary pads 2024 4.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/sanitary pads 2024 4.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/sanitary pads 2024 3.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/sanitary pads 2024 3.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/sanitary pads 2024 5.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+                <img src="images/bookathon.jpg" alt="">
+            </div>
+        </div>
+    </section>
+<!-------------------------------------------------Footer with Contact Information --------------------------------------->
+<section class="footer">
+    <h4>About us</h4>
+    <p> Ikusasalentsha Organization was Established in October 2020 by Ms. NOMFUNDO NKOSI. It 
+        is based in Bergville (KwaZulu-Natal). </br>Ikusasalentsha is a registered non-profit organization
+        (NPO 260-340).
+         </p>
+
+         <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            
+         </div>
+         <p>&copy; 2025 <a href="https://ikusasalentsha.org">ikusasalentsha.org </a>. All rights reserved.</p>
+</section>  
+<!-------------------------------------------------Scripts------------------->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-------------------------------------------------End of Gallery------------------->
