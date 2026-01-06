@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IkusasaLentsha 2026 Calendar</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background:#f8f5f4;
+  margin:20px;
+}
+h1{
+  text-align:center;
+  color:#045474;
+}
+.calendar-container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+.month{
+  background:#fff;
+  border:1px solid #fc7115e0;
+  border-radius:5px;
+  padding:10px;
+}
+.month h3{
+  text-align:center;
+  color:#eb7426;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+th,td{
+  width:14.28%;
+  text-align:center;
+  padding:5px;
+  font-size:14px;
+}
+th{
+  background:#02647c;
+  color:white;
+}
+td{
+  background:#f0f0f0;
+}
+.event{
+  background:#ff9900;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* MODAL */
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  justify-content:center;
+  align-items:center;
+}
+.modal{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  width:90%;
+  max-width:400px;
+  animation:popup .3s ease;
+}
+.close-btn{
+  float:right;
+  font-size:22px;
+  cursor:pointer;
+  color:red;
+}
+@keyframes popup{
+  from{transform:scale(.7);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<h1>IkusasaLentsha 2026 Calendar</h1>
+<div id="calendar" class="calendar-container"></div>
+
+<!-- MODAL -->
+<div id="modalOverlay" class="modal-overlay">
+  <div class="modal">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p>IkusasaLentsha official event.</p>
+  </div>
+</div>
+
+<script>
+const year = 2026;
+
+const events = {
+  "2026-01-12":"Resuming of 2026 First Term",
+  "2026-01-26":"Career Guidance Week",
+  "2026-01-27":"Career Guidance Week",
+  "2026-01-28":"Career Guidance Week",
+  "2026-01-29":"Career Guidance Week",
+  "2026-01-30":"Career Guidance Week",
+  "2026-03-16":"Career Evaluation",
+  "2026-03-31":"End Career Evaluation",
+  "2026-04-06":"Start: WhatsApp University Applications",
+  "2026-05-04":"Back to School Program",
+  "2026-05-05":"Back to School Program",
+  "2026-05-06":"Back to School Program",
+  "2026-06-20":"Agricultural Career Motivation",
+  "2026-08-07":"Sanitary Pads Campaign",
+  "2026-08-31":"End WhatsApp University Applications",
+  "2026-10-01":"Start NSFAS Applications",
+  "2026-11-30":"End Bursary/Study Programme",
+  "2026-12-15":"End Year Function"
+};
+
+const months=[
+"January","February","March","April","May","June",
+"July","August","September","October","November","December"
+];
+
+const calendar=document.getElementById("calendar");
+
+months.forEach((month,m)=>{
+  const firstDay=new Date(year,m,1).getDay();
+  const days=new Date(year,m+1,0).getDate();
+
+  let html=`<div class="month"><h3>${month}</h3><table>
+  <tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr><tr>`;
+
+  for(let i=0;i<firstDay;i++) html+="<td></td>";
+
+  for(let d=1;d<=days;d++){
+    const key=`${year}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    html+=events[key]
+      ? `<td class="event" data-event="${events[key]}">${d}</td>`
+      : `<td>${d}</td>`;
+    if((firstDay+d)%7===0) html+="</tr><tr>";
+  }
+
+  html+="</tr></table></div>";
+  calendar.innerHTML+=html;
+});
+
+/* MODAL LOGIC */
+const modal=document.getElementById("modalOverlay");
+const title=document.getElementById("modalTitle");
+const close=document.getElementById("closeModal");
+
+document.addEventListener("click",e=>{
+  if(e.target.classList.contains("event")){
+    title.innerText=e.target.dataset.event;
+    modal.style.display="flex";
+  }
+});
+close.onclick=()=>modal.style.display="none";
+modal.onclick=e=>{ if(e.target===modal) modal.style.display="none"; };
+</script>
+
+</body>
+</html>
